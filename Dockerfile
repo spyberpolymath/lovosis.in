@@ -20,12 +20,12 @@ RUN npm run build
 
 # Environment variables
 ENV NODE_ENV=production
-ENV PORT=8081
+ENV PORT=8082
 ENV HOSTNAME="0.0.0.0"
 
 # Create directory for videos
 RUN mkdir -p /app/.next/static/videos
 
-EXPOSE 8081
+EXPOSE 8082
 
 CMD ["npm", "start"]

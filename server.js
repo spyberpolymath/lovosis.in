@@ -2,7 +2,7 @@ const express = require('express');
 const { connectDB } = require('./src/lib/db');
 
 const app = express();
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 8082;
 
 // Middleware
 app.use(express.json());
