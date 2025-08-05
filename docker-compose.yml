@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:8082"     # HTTP
+      - "8082:8082"     # HTTP
       - "443:8082"    # HTTPS (optional, only if your container handles SSL)
     environment:
       - NODE_ENV=production
