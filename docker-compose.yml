@@ -4,8 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8082:8082"     # HTTP
-      - "443:8082"    # HTTPS (optional, only if your container handles SSL)
+      - "8082:8082"
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_DOMAIN=lovosis.in
